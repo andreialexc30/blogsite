@@ -1,0 +1,533 @@
+/* Custom properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Roboto Slab', serif;
+    --ff-secondary: 'PT Serif', sans-serif;
+
+    --fw-reg: 400;
+    --fw-bold: 800;
+
+    --clr-primary: #ffffff;
+    --clr-secondary: #f2f2f2;
+    --clr-text: #564d4d;
+    --clr-accent: #e84a45;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 400px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.100rem;
+    }
+}
+
+/* Overall styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-secondary);
+    color: var(--clr-text);
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    line-height: 1.4;
+}
+
+.section_name {
+    margin-left: 10em;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--clr-text);
+}
+
+.hidden {
+    display: none;
+}
+
+.arrow_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin-right: 6em;
+}
+
+.arrow {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.date {
+    display: flex;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.link_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infolink {
+    transition: color 1.2s;
+}
+
+.infolink:hover {
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+    color: #a23535;
+}
+
+/* Navigation */
+
+.branding {
+    margin-right: 20em;
+    color: #e84a45 !important;
+    font-size: 1.25rem;
+}
+
+.nav {
+    background-color: var(--clr-secondary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 6em;
+}
+
+.nav_item {
+    margin-right: 25px;
+}
+
+.nav_link {
+    text-decoration: none;
+    transition: color 1s;
+    color: var(--clr-text)
+}
+
+.nav_link:hover {
+    color: #071414;
+    cursor: pointer;
+}
+
+.nav_link:focus {
+    color:  #071414;
+}
+
+/* About section */
+.about {
+    background: var(--clr-accent);
+    height: 480px;
+    color: var(--clr-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+}
+
+.header_container {
+    margin: 3em 500px 0px 7.3em;
+    padding-top: 50px;
+}
+
+/* Newsletter section */
+.newsletter {
+    background: var(--clr-secondary);
+    color: var(--clr-text);
+    height: 320px;
+}
+
+.about_letter {
+    margin: 0 2.5em 0 40em;
+}
+
+.letter_link {
+    margin-right: 30.2em;
+    padding-top: 0.9em;
+    text-decoration: none;
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+}
+
+/* Essays section */
+.essays {
+    background: var(--clr-primary);
+    color: var(--clr-text);
+    height: 380px;
+}
+
+#ess {
+    padding-top: 2.5px;
+}
+
+.about_essays {
+    margin: 0 2.5em 0 45em;
+    height: 12em;
+}
+
+.essays_link {
+    margin-right: 26em;
+    padding-top: 8px;
+    text-decoration: none;
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+}
+
+#latest {
+    padding-right: 19.44em;
+}
+
+/* Presentations section */
+.presentations {
+    background: var(--clr-secondary);
+    color: var(--clr-text);
+    height: 425px;
+}
+
+.about_presentations {
+    margin: 0 2.5em 0 40em;
+}
+
+.pres_link {
+    margin-right: 27.6em;
+    padding-top: 1.5em;
+    text-decoration: none;
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 3.80em;
+}
+
+/* Newsletter content down below */
+.news {
+    padding-top: 1em;
+    /*height: 22em;*/
+}
+
+#border {
+    padding-top: 2em;
+    border-bottom: 1px dotted #bdb8b8;
+    margin: 0 18em 0 18em;
+    position: relative;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+/*Newsletter info */
+
+.news_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.sample_link {
+    margin-right: 30.2em;
+    text-decoration: none;
+    color: var(--clr-text);
+    border-bottom: 1px solid grey;
+}
+
+.sub-title {
+    font-size: 11px;
+    color: grey;
+}
+
+.people_box {
+    padding-right: 1em;
+}
+
+.secondbox {
+    padding-right: 3.3em;
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviews {
+    padding-right: 41.8em;
+    font-size: 13px;
+}
+
+/*Newsletter subscription */
+.premium_ed, .free_ed {
+    padding-right: 10em;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    align-self: center;
+}
+
+.button_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 4em;
+}
+
+.btn {
+    background-color: #4d4d4d;
+    color:#f9f7f7;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    padding: .8em 1.4em;
+    border: 0;
+}
+
+.btn:hover {
+    background: #6e6e6e;
+    transition: 500ms;
+}
+
+.lower {
+    margin-top: 2em;
+}
+
+.free_btn {
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    height: 33.5px;
+    margin-bottom: 20px;
+}
+
+#freebtn {
+    width: 70%;
+    height: 45px;
+    background: transparent;
+    border: 1px solid;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+}
+
+#freebtn:hover {
+    background: #0e0335;
+    color: white;
+    transition: 150ms;
+}
+
+/* Newsletter members' archive */
+.members_archive {
+    margin-bottom: 3em;
+}
+
+.archive_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.archive_title > h3 {
+    border-bottom: 1px solid grey;
+}
+
+.archive_info > p {
+    font-size: 15px;
+}
+
+.archive_link {
+    color: var(--clr-text);
+}
+
+/* Essays styling */
+.essay {
+    padding-bottom: 3.5em;
+    background: var(--clr-primary);
+}
+
+.essay_newsletter {
+    background: var(--clr-secondary);
+}
+
+.dummybox{
+    font-size: 14.5px;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.essay_list {
+    padding-top: 5em;
+}
+
+.list_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.list_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5em;
+} 
+
+.item_container > a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+/* Essays articles */
+.essay_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.essay_article {
+    padding-bottom: 5px;
+}
+
+.essay_title {
+    margin-bottom: -13px;
+    font-size: 18.5px;
+}
+
+.essay_link:hover {
+    transition: 800ms;
+    color: grey;
+}
+
+.essay_article > p {
+    font-size: 16px;
+}
+
+.essay_title > h5 > a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+/* Popular section */
+.popular_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2em;
+}
+
+.popular_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 3em;
+    padding-right: 3em;
+    padding-left: 3em;
+} 
+
+.popular_items > a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+/* Search bar */
+.search_bar {
+    display: flex;
+    justify-content: center;
+    padding-top: 6em;
+}
+
+::placeholder {
+    opacity: 0.4;
+}
+
+#query {
+    width: 38em;
+    height: 2.5em;
+    background: transparent;
+    border: 1px solid grey;
+
+}
+
+#query:hover {
+    border: 1px solid black;
+}
+
+.searchbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+/* Essays footer */
+.newsletter_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_info > p {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.sub_btn {
+    width: 27em;
+    height: 3.7em;
+    background-color: #4d4d4d;
+    color:#f9f7f7;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border: 0;
+}
+
+.sub_btn:hover {
+    background: #6e6e6e;
+    transition: 300ms;
+}
+
+.copyright {
+    padding-top: 3em;
+    font-size: 0.8em;
+}
