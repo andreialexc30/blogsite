@@ -483,11 +483,13 @@ body {
     height: 2.5em;
     background: transparent;
     border: 1px solid grey;
+    border-radius: 2.5px;
 
 }
 
 #query:hover {
     border: 1px solid black;
+    border-radius: 2.5px;
 }
 
 .searchbtn {
@@ -530,4 +532,102 @@ body {
 .copyright {
     padding-top: 3em;
     font-size: 0.8em;
+}
+
+/* Presentations section */
+.presentations {
+    padding-top: 4em;
+}
+
+.presentations_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+/* Contact */
+.contact {
+    padding-bottom: 4em;
+}
+
+.contact_input {
+    padding-top: 4em;
+}
+
+.contact_title {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact input */
+.contact_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+#firstname {
+    margin-right: 1em;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    padding-right: 35.4em;
+    padding-bottom: 3px;
+    font-size: 0.8em;
+}
+
+.input_names {
+    width: 20em;
+    height: 2.5em;
+}
+
+.input_email, .input_subject {
+    width: 41em;
+    height: 2.5em;
+}
+
+.input_msg {
+    height: 97px;
+    width: 549px;
+}
+
+.label_subject {
+    padding-right: 34.4em;
+}
+
+.label_msg {
+    padding-right: 34em;
+}
+
+/* Send button */
+.send_btn {
+    display: flex;
+    justify-content: center;
+    padding-right: 26em;
+}
+
+#sendbtn {
+    width: 10%;
+    height: 3.6em;
+    background: transparent;
+    border: 1px solid;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#sendbtn:hover {
+    background: #0e0335;
+    color: white;
+    transition: 150ms;
 }
