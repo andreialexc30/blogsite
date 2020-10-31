@@ -48,25 +48,71 @@
                 </ul>
             </nav>
         </header>
-        <section class="presentations">
+        <section class="presents">
             <div class="presentations_title">
                 <h4>Presentations</h4>
             </div>
-            <div class="slide">
-                <h3>Summer update: Tech and the new normal</h3>
-                <p>This June, I updated my macro trends deck, with a condensed version of where we were in
-                    <br /> January and some thoughts on where we are in June: forced experimentation and years of 
-                    <br /> progress in weeks.
-                </p>
-                <h2>Slide goes here</h2>
+            <div class="slides">
+                <div class="slide">
+                    <h3>Summer update: Tech and the new normal</h3>
+                    <p class="pres_text">
+                        This June, I updated my macro trends deck, with a condensed version of where we were in
+                        <br /> January and some thoughts on where we are in June: forced experimentation and years of 
+                        <br /> progress in weeks.
+                    </p>
+                    <h2>Slide goes here</h2>
+                </div>
+                <div class="slide">
+                    <h3>The Shoulders of Giants</h3>
+                    <p class="pres_text">
+                        Every year, I produce a big presentation digging into macro and strategic trends in the tech
+                        <br /> industry. This year, 'Standing on the shoulders of giants' looks at what it means that 4bn
+                        <br /> people have a smartphone; we connected everyone, and now we wonder what the Next Big 
+                        <br /> Thins is, but meanwhile, connecting everyone means we connected all the problems. Tech is 
+                        <br /> becoming a regulated industry, but we don't really know what that will mean.
+                    </p>
+                    <h2>Slide goes here</h2>
+                </div>
             </div>
-            <div class="slide">
-                <h3>Summer update: Tech and the new normal</h3>
-                <p>This June, I updated my macro trends deck, with a condensed version of where we were in
-                    <br /> January and some thoughts on where we are in June: forced experimentation and years of 
-                    <br /> progress in weeks.
+            <div class="button_container">
+                <button class="dlbutton" id="pressBtn">
+                    Download the PDF
+                </button>
+            </div>
+            <div class="video_container">
+                <p class="pres_text">
+                    I first gave this presentation at an event in Davos in January 2020, in partnership with
+                    <br /> <a class="vidlink" href="www.nasdaq.com">Nasdaq</a> and <a class="vidlink" href="www.protocol.com">Protocol</a>. After the presentation we did a Q&A - this is the video.
                 </p>
-                <h2>Slide goes here</h2>
+                <iframe width="619" height="348" src="https://www.youtube.com/embed/ZLqxE12y_Yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="older_title">
+                <h4>Older presentations</h4>
+            </div>
+            <div class="older_presentations">
+                <div class="older_column">
+                    <ul class="column_list">
+                        <li class="column_item">
+                            2018:<a class="pr vidlink" href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/5e45ca2b5750af6b4e5fcb14/1581632374050/2018+Benedict+Evans+End+of+the+beginning.pdf">The End of the Beginning</a>
+                        </li>
+                        <li>
+                            2017:<a class="pr vidlink" href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/5e45cbd35750af6b4e60ab0f/1581632599540/2017+Benedict+Evans+Ten+Year+Futures.pdf">Ten Year Futures</a>
+                        </li>
+                        <li>
+                            2016:<a class="pr vidlink" href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/5e45cf824f7b804fd51df551/1581633597427/2016+Benedict+Evans+Mobile+eating+the+World.pdf">Mobile is eating the World</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="older_column">
+                    <ul class="column_list">
+                        <li>
+                            2015:<a class="pr vidlink" href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/5e45cd0b002e8a3e5fc7ffa3/1581632809682/2015+Benedict+Evans+Mobile+eating+the+world.pdf">Mobile is eating the World</a>
+                        </li>
+                        <li>
+                            2013:<a class="pr vidlink" href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/5e45cd407ba7eb349952fa7a/1581632872183/2013+Benedict+Evans+Mobile+eating+the+world.pdf">Mobile is eating the World</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="essay essay_newsletter">
@@ -81,7 +127,7 @@
                     I've been writing it since 2013, and there are now 150,000
                     <br /> subscribers. It's pretty good.
                 </p>
-                <button onclick="location.href = 'newsletter.html';" class="sub_btn">
+                <button class="sub_btn" id="subBtn">
                     Subscribe
                 </button>
                 <div class="copyright">
