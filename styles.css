@@ -743,3 +743,28 @@ body {
 .disclaimer > h2 {
     border-bottom: 1px solid grey;
 }
+
+/* Disclaimer footer */
+.check-out {
+    margin-left: 2em;
+    font-size: 16.5px;
+}
+
+.github {
+    margin-top: -14px;
+}
+
+.icons {
+    list-style: none;
+}
+
+.github_link {
+    text-decoration: none;
+    color: var(--clr-text);
+    font-size: 20px;
+}
+
+.github_link:hover {
+    font-size: 21px;
+    color:  #6e6e6e;
+}
