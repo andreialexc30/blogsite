@@ -218,7 +218,10 @@ body {
 /* Newsletter content down below */
 .news {
     padding-top: 1em;
-    /*height: 22em;*/
+}
+
+.news_reviews {
+    height: 22em;
 }
 
 #border {
