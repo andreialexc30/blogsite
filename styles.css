@@ -60,7 +60,6 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    align-self: flex-end;
     margin-right: 6em;
 }
 
@@ -91,6 +90,13 @@ body {
 }
 
 /* Navigation */
+
+.mobile_title {
+    display: none;
+    color: #e84a45 !important;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
 
 .branding {
     margin-right: 20em;
@@ -597,6 +603,7 @@ body {
     text-decoration: none;
     color: var(--clr-text);
     border-bottom: 1px solid grey;
+    margin-left: 4px;
 }
 
 .vidlink:hover {
@@ -740,7 +747,9 @@ body {
 .disc_link {
     text-decoration: none;
     color: var(--clr-text);
-    border-bottom: 1px solid grey;
+}
+.disc_link:hover {
+    color: grey;
 }
 
 .disclaimer > h2 {
@@ -770,4 +779,101 @@ body {
 .github_link:hover {
     font-size: 21px;
     color:  #6e6e6e;
+}
+
+
+/* Mobile */
+#burgerbtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.7em;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+   display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 300px;
+    }
+    .nav_list {
+        display: none;
+    }
+
+    #nav-ul.show {
+        display: flex;
+    }
+    
+    .mobile_title {
+        display: flex;
+        justify-content: center;
+    }
+    /*#burgerbtn {
+        display: block;
+    }*/
+}
+
+@media screen and (max-width: 768px){
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .newsletter, .essays, .presentations {
+        width: 400px;
+        height: 600px;
+    }
+
+    div {
+        width: 300px;
+        font-size: 19px;
+    }
+
+    .about {
+        height: 550px;
+        width: 400px;
+    }
+
+    .header_container {
+        margin: 2em;
+    }
+
+    .section_name {
+        margin-left: 2em;
+        margin-bottom: 1rem;
+    }
+    
+    .about_letter {
+        margin: 1em;
+    }
+
+    .link_container {
+        display: block;
+        margin: 2em;
+    }
+
+    .letter_link {
+        margin: 0px 1em 0px 0px;
+    }
+
+    #latest {
+        padding-right: 7.2em;
+    }
+    
+    .about_essays {
+        height: 17.2em;
+        margin: 1em;
+    }
+
+    .about_presentations {
+        margin: 1em;
+    }
+
+    .about_presentations > img {
+        max-width: 100%;
+    }
 }
