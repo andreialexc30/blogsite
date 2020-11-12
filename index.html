@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <meta charset="UTF-8">     
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>John Smith</title>
         <link rel="shortcut icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -14,7 +14,9 @@
     <body>
         <header>
             <nav id="navbar" class="nav sticky">
-                <ul class="nav_list">
+                <h4 class="mobile_title"><a href="index.html" class="mobile_title">John Smith</a></h4>
+                <button class="hamburger" id="burgerbtn"><i class="fas fa-bars"></i></button>
+                <ul class="nav_list" id="nav-ul">
                     <li class="nav_item">
                         <a href="index.html" class="nav_link branding">
                             John Smith
@@ -47,6 +49,36 @@
                     </li>
                 </ul>
             </nav>
+            <div class="menu" id="burger_menu">
+                <h3>Menu</h3>
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="newsletter.html" class="nav_link">
+                            Newsletter
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="essays.html" class="nav_link">
+                            Essays
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="presentations.html" class="nav_link">
+                            Presentations
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="disclaimer.html" class="nav_link">
+                            Disclaimer
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <section class="about">
             <div class="header_container">
@@ -74,8 +106,8 @@
                 <br /> context and analysis.
                 <br />
                 <br /> 
-                I’ve been writing it since 2013, and there are now 150,000<br />
-                subscribers. It’s pretty good. 
+                I’ve been writing it since 2013, and there are now 150,000
+                <br />subscribers. It’s pretty good. 
             </div>
             <div class="link_container">
                 <a href="newsletter.html" class="letter_link infolink">
@@ -134,7 +166,7 @@
                 <h2>Presentations</h2>
             </div>
             <div class="about_presentations">
-                <img src="imgs/presentation.png" class="img" /><br />
+                <img src="imgs/presentation.png" class="img" alt="presentation_thumbnail" /><br />
                 <br />
                 Every year, I produce a big presentation digging into macro and<br />
                 strategic trends in the tech industry. This year, ‘Standing on the<br />
