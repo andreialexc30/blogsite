@@ -877,3 +877,89 @@ body {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .info_news, .news {
+        width: 300px;
+        margin: auto;
+    }
+
+    .news_reviews, .subscription {
+        height: 49em;
+    }
+
+    .subscription {
+        height: 55em;
+    }
+
+    /* .info_news, .news_reviews, .subscription {
+        margin: 3em;
+    } */
+
+    .members_archive {
+        margin: .8em;
+    }
+
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subs {
+        width: 600px;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #reviews {
+        padding-right: 8.5em;
+    }
+
+    .button_holder {
+        padding-bottom: 2em;
+    }
+
+    .btn {
+        width: 250px;
+        margin-left: 2em;
+    }
+
+    #previous, #next {
+        margin-right: 1em;
+        font-size: 17px;
+    }
+    
+    .input_container {
+        padding-top: 1.5em;
+        display: block;
+        align-self: auto;
+    }
+
+    #email {
+        width: 320px;
+    }
+
+    #freebtn {
+        width: 40%;
+        border: 2px solid #0e0335;
+    }
+
+    .free_btn {
+        display: block;
+        margin-left: 5em;
+    }
+
+    .premium_ed, .free_ed {
+        width: 550px;
+    }
+
+    .flexbox {
+        width: 365px;
+    }
+
+    #border{
+        margin: 1.5em;
+        display: none;
+    }
+}
