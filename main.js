@@ -24,10 +24,3 @@ document.getElementById('subBtn').onclick = () => {
     location.href = "newsletter.html";
 };
 
-
-const hamburger = document.getElementById('burgerbtn');
-const navList = document.getElementById('nav-ul');
-
-hamburger.addEventListener('click', () => {
-    navList.classList.toggle('show');
-})
