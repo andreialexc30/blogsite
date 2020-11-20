@@ -32,6 +32,14 @@
     }
 }
 
+.nav-open .hamburger {
+    position: fixed;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
 /* Overall styling */
 html {
     scroll-behavior: smooth;
@@ -768,16 +776,31 @@ body {
 
 .icons {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto
+}
+
+.github_link, .mail_link {
+    text-decoration: none;
+    color: var(--clr-text);
+    font-size: 2em;
 }
 
 .github_link {
-    text-decoration: none;
-    color: var(--clr-text);
-    font-size: 20px;
+    margin-right: 3em;
+}
+
+.mail_link {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .github_link:hover {
-    font-size: 21px;
+    color:  #6e6e6e;
+}
+
+.mail_link:hover {
     color:  #6e6e6e;
 }
 
@@ -791,8 +814,8 @@ body {
     display: none;
 }
 
-.menu {
-   display: none;
+.menu { 
+    display: none;
 }
 
 /* Media queries */
@@ -813,9 +836,45 @@ body {
         display: flex;
         justify-content: center;
     }
-    /*#burgerbtn {
+    #burgerbtn {
         display: block;
-    }*/
+        position: absolute;
+        z-index: 10000;
+        right: 1em;
+        top: 1em;
+        padding: .15em;
+    }
+
+    .menu {
+        text-align: center;
+        position: fixed;
+        background: grey;
+        color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateX(10%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+        width: 100%;
+    }
+
+    .nav_mobile {
+        list-style: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .nav_mobile > li > a {
+        color: white;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -882,6 +941,10 @@ body {
     .info_news, .news {
         width: 300px;
         margin: auto;
+    }
+
+    .info_news {
+        height: 35em;
     }
 
     .news_reviews, .subscription {
@@ -961,5 +1024,98 @@ body {
     #border{
         margin: 1.5em;
         display: none;
+    }
+
+    .sample_link {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dummybox, .essay_container, .popular_title, .newsletter_info, .search_bar {
+        margin: auto;
+    }
+
+    .list_container, .popular_container {
+        flex-direction: column;
+    }
+    
+    .search_bar {
+        max-width: 255px;
+    }
+
+    #form, #query {
+        width: 100%;
+    }
+
+    .sub_btn {
+        width: 15em;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .essay_newsletter {
+        padding-top: 40em;
+    }
+
+    .presentations_title, .slides, .button_container, .video_container, .older_title {
+        margin: auto;
+    }
+
+    .older_presentations {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact_input {
+        margin: auto;
+    }
+
+    .send_btn {
+        display: block;
+        margin: auto;
+        padding-right: 0;
+    }
+
+    .label {
+        padding-right: 16em;
+        font-size: 0.77em;
+        justify-content: flex-start;
+    }
+
+    #sendbtn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .disc_title, .disclaimer {
+        margin: auto;
+    }
+
+    .disc_title, #benevans {
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        margin: auto;
+    }
+
+    .disclaimer_content {
+        height: 48em;
+    }
+
+    .check-out {
+        font-size: 14px;
+    }
+
+    .github_link, .mail_link {
+        font-size: 1.5em
     }
 }
